@@ -3,10 +3,11 @@
 // (https://console.firebase.google.com/project/your-project-id/overview)
 // and clicking "Add Firebase to your web app"
 var config = {
-  apiKey: "<your-api-key>",
-  authDomain: "<your-project-id>.firebaseapp.com",
-  databaseURL: "https://<your-project-id>.firebaseio.com",
-  storageBucket: "<your-project-id>.appspot.com",
+  apiKey: "<AIzaSyBNL-UAZu0_6kclzSu34S8-BYiZeJ2qriw>",
+  authDomain: "<lab1-86253.firebaseapp.com",
+  databaseURL: "https://lab1-86253-default-rtdb.firebaseio.com",
+  projectId: "lab1-86253",
+  storageBucket: "<lab1-86253.appspot.com>",
 };
 
 // Initialize your Firebase app
@@ -26,4 +27,28 @@ recommendations.push({
     "title": "The danger of a single story",
     "presenter": "Chimamanda Ngozi Adichie",
     "link": "https://www.ted.com/talks/chimamanda_adichie_the_danger_of_a_single_story"
+});
+var mydetail = myFirebase.child("Mydetail")
+
+mydetail.push({
+  "studentID": "6310210105",
+  "Name"     : "sulfa chaisoongnern",
+  "LineID"   : "0622132172"
+});
+
+var TA = myFirebase.child("TA");
+
+TA.push({
+  "TA1":
+  {
+    "StudentId": "6310210105",
+    "Name" : "Sulfa chaisoongnern",
+    "Mail"  : "sula.2002@gmail.com"
+  },
+    "TA2": 
+    {
+     "studentID" : "6210210100",
+     "Name" : "Maya",
+     "Mail" : "6210210100@psu.ac.th"
+    }
 });
